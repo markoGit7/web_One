@@ -3,31 +3,41 @@
   "version": "1.0.0",
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev:client": "vite --config client/vite.config.js",
-    "dev:server": "node server/server.js",
+    "dev:server": "npm server/server.js",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/markoGit7/ToDoList.git"
+    "url": "git+https://github.com/markoGit7/web_One.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/markoGit7/ToDoList/issues"
+    "url": "https://github.com/markoGit7/web_One/issues"
   },
-  "homepage": "https://github.com/markoGit7/ToDoList#readme",
+  "homepage": "https://github.com/markoGit7/web_One#readme",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "concurrently": "^9.1.2",
     "express": "^5.1.0",
+    "idb": "^8.0.3",
     "mysql2": "^3.14.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-router-dom": "^7.6.3",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.5.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
     "vite": "^6.3.5"
   }
 }

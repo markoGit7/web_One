@@ -6,7 +6,7 @@ export default defineConfig({
   root: './client',
   plugins: [react()],
   server: {
-    port: 3000,
+    port: 5173,
     host: true, // exposes to local network
   },
 });

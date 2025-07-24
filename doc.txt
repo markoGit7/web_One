@@ -1,3 +1,6 @@
 This folder is packed with all vite + react essentials.
 Only thing you'll need it to:
 >npm install
+
+
+Im using Email.js ---> for receving emails sent by users
