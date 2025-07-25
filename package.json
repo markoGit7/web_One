@@ -8,7 +8,7 @@
     "dev:client": "vite --config client/vite.config.js",
     "dev:server": "npm server/server.js",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
-    
+
     "build": "vite build",
     "deploy": "gh-pages -d dist"
   },
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/markoGit7/web_One/issues"
   },
-  "homepage": "https://github.com/markoGit7/web_One#readme",
+  "homepage": "https://markoGit7.github.io/web_One/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "concurrently": "^9.1.2",
