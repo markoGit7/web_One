@@ -9,7 +9,7 @@
     "dev:server": "npm server/server.js",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
 
-    "build": "vite buil --root client",
+    "build": "vite buil",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
