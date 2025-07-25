@@ -4,13 +4,13 @@ import Marquee from "react-fast-marquee";
 function InfinitSpinIcons() {
 
     const Icons = [
-        '/client-1.svg',
-        '/client-2.svg',
-        '/client-3.svg',
-        '/client-4.svg',
-        '/client-5.svg',
-        '/client-6.svg',
-        '/client-3.svg'
+        `${import.meta.env.BASE_URL}client-1.svg`,
+        `${import.meta.env.BASE_URL}client-2.svg`,
+        `${import.meta.env.BASE_URL}client-3.svg`,
+        `${import.meta.env.BASE_URL}client-4.svg`,
+        `${import.meta.env.BASE_URL}client-5.svg`,
+        `${import.meta.env.BASE_URL}client-6.svg`,
+        `${import.meta.env.BASE_URL}client-3.svg`
     ]
 
     return (
