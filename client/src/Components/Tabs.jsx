@@ -80,6 +80,7 @@ function Tabs() {
     
     const [currentI, setCurrentI] = useState(t?.tabs_section?.btns[0].toLowerCase());
     
+    console.log(currentI);
     
     return (
         <section className="py-[62px] relative w-full pt-[45px] sm:pt-[62px]">
@@ -97,7 +98,7 @@ function Tabs() {
                             {
                                 t?.tabs_section?.btns.map((btn, indx) => (
                                     <li key={indx} className="px-[15px]  sm:px-[22px] md:px-[29.5]">
-                                        <button className={`font-normal text-sm md:text-base transition-colors duration-200 ease-in-out outline-none ring-0 ${currentI === (btn.toLowerCase() ? 'text-colorblue' : 'text-gray-900')}`} onClick={() => setCurrentI(btn.toLowerCase())}>
+                                        <button className={`font-normal text-sm md:text-base transition-colors duration-200 ease-in-out outline-none ring-0 ${currentI === btn.toLowerCase() ? 'text-colorblue' : 'text-gray-900'}`} onClick={() => setCurrentI(btn.toLowerCase())}>
                                             {btn}
                                         </button>
                                     </li>
@@ -105,7 +106,7 @@ function Tabs() {
                             }
 
                         </ul>
-                        <div className={`absolute translate-y-0 sm:bottom-auto sm:translate-x-0 right-1/2 translate-x-1/2 bottom-[10px] top-auto sm:right-0 sm:top-1/2 sm:-translate-y-1/2 cursor-pointer font-normal ${currentI === (t?.tabs_section?.viewBtn.toLowerCase() ? 'text-colorblue' : 'text-gray-900')}`} onClick={() => setCurrentI(t?.tabs_section?.viewBtn.toLowerCase())}>{t?.tabs_section?.viewBtn}</div>
+                        <div className={`absolute translate-y-0 sm:bottom-auto sm:translate-x-0 right-1/2 translate-x-1/2 bottom-[10px] top-auto sm:right-0 sm:top-1/2 sm:-translate-y-1/2 cursor-pointer font-normal ${currentI === t?.tabs_section?.viewBtn.toLowerCase() ? 'text-colorblue' : 'text-gray-900'}`} onClick={() => setCurrentI(t?.tabs_section?.viewBtn.toLowerCase())}>{t?.tabs_section?.viewBtn}</div>
                     </div>
 
                     {/* Content */}
@@ -114,7 +115,7 @@ function Tabs() {
 
                         {
                             tabs.map((tab, indx) => (
-                                <div key={indx} className={`w-full relative transition-all duration-300 ease-in-out ${currentI === (tab.tabName?.toLowerCase() ? 'translate-y-0 opacity-100 ' : 'translate-y-12 opacity-0 max-h-0 overflow-hidden')}`}>
+                                <div key={indx} className={`w-full relative transition-all duration-300 ease-in-out ${currentI === tab.tabName?.toLowerCase() ? 'translate-y-0 opacity-100 ' : 'translate-y-12 opacity-0 max-h-0 overflow-hidden'}`}>
                                     <div className="flex flex-row flex-wrap -mx-[15px] gap-y-[20px]">
                                         
                                         {

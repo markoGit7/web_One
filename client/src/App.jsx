@@ -33,7 +33,7 @@ function App() {
 
     return (
         <>
-            <BrowserRouter basename="/web_One">
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Routes>
                     <Route path='/' element={<Navigate to="/en" replace />} />
                     <Route path='/:lang' element={<Home onOpenContactModal={handleOpenFormModal}/>} />
