@@ -11,68 +11,68 @@ function Tabs() {
             'tabName':t?.tabs_section?.btns[0].toLowerCase(),
 
             'images': [
-                ['/tabs-img-1.jpg', '/tabs-img-1.webp'],
-                ['/tabs-img-2.jpg', '/tabs-img-2.webp'],
-                ['/tabs-img-3.jpg', '/tabs-img-3.webp'],
-                ['/tabs-img-4.jpg', '/tabs-img-4.webp'],
-                ['/tabs-img-5.jpg', '/tabs-img-5.webp'],
-                ['/tabs-img-6.jpg', '/tabs-img-6.webp'],
-                ['/tabs-img-7.jpg', '/tabs-img-7.webp'],
-                ['/tabs-img-8.jpg', '/tabs-img-8.webp']
+                [`${import.meta.env.BASE_URL}tabs-img-1.jpg`, `${import.meta.env.BASE_URL}tabs-img-1.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-2.jpg`, `${import.meta.env.BASE_URL}tabs-img-2.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-3.jpg`, `${import.meta.env.BASE_URL}tabs-img-3.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-4.jpg`, `${import.meta.env.BASE_URL}tabs-img-4.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-5.jpg`, `${import.meta.env.BASE_URL}tabs-img-5.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-6.jpg`, `${import.meta.env.BASE_URL}tabs-img-6.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-7.jpg`, `${import.meta.env.BASE_URL}tabs-img-7.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-8.jpg`, `${import.meta.env.BASE_URL}tabs-img-8.webp`]
             ]
         },
 
         {
             'tabName':t?.tabs_section?.btns[1].toLowerCase(),
             'images': [
-                ['/tabs-img-1.jpg', '/tabs-img-1.webp'],
-                ['/tabs-img-2.jpg', '/tabs-img-2.webp'],
-                ['/tabs-img-3.jpg', '/tabs-img-3.webp'],
-                ['/tabs-img-4.jpg', '/tabs-img-4.webp']
+                [`${import.meta.env.BASE_URL}tabs-img-1.jpg`, `${import.meta.env.BASE_URL}tabs-img-1.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-2.jpg`, `${import.meta.env.BASE_URL}tabs-img-2.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-3.jpg`, `${import.meta.env.BASE_URL}tabs-img-3.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-4.jpg`, `${import.meta.env.BASE_URL}tabs-img-4.webp`]
             ]
         },
 
         {
             'tabName':t?.tabs_section?.btns[2].toLowerCase(),
             'images': [
-                ['/tabs-img-5.jpg', '/tabs-img-5.webp'],
-                ['/tabs-img-6.jpg', '/tabs-img-6.webp'],
-                ['/tabs-img-7.jpg', '/tabs-img-7.webp'],
-                ['/tabs-img-8.jpg', '/tabs-img-8.webp']
+                [`${import.meta.env.BASE_URL}tabs-img-5.jpg`, `${import.meta.env.BASE_URL}tabs-img-5.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-6.jpg`, `${import.meta.env.BASE_URL}tabs-img-6.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-7.jpg`, `${import.meta.env.BASE_URL}tabs-img-7.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-8.jpg`, `${import.meta.env.BASE_URL}tabs-img-8.webp`]
             ]
         },
 
         {
             'tabName':t?.tabs_section?.btns[3].toLowerCase(),
             'images': [
-                ['/tabs-img-1.jpg', '/tabs-img-1.webp'],
-                ['/tabs-img-3.jpg', '/tabs-img-3.webp'],
-                ['/tabs-img-5.jpg', '/tabs-img-5.webp'],
-                ['/tabs-img-7.jpg', '/tabs-img-7.webp']
+                [`${import.meta.env.BASE_URL}tabs-img-1.jpg`, `${import.meta.env.BASE_URL}tabs-img-1.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-3.jpg`, `${import.meta.env.BASE_URL}tabs-img-3.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-5.jpg`, `${import.meta.env.BASE_URL}tabs-img-5.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-7.jpg`, `${import.meta.env.BASE_URL}tabs-img-7.webp`]
             ]
         },
 
         {
             'tabName':t?.tabs_section?.btns[4].toLowerCase(),
             'images': [
-                ['/tabs-img-2.jpg', '/tabs-img-2.webp'],
-                ['/tabs-img-4.jpg', '/tabs-img-4.webp'],
-                ['/tabs-img-6.jpg', '/tabs-img-6.webp'],
-                ['/tabs-img-8.jpg', '/tabs-img-8.webp']
+                [`${import.meta.env.BASE_URL}tabs-img-2.jpg`, `${import.meta.env.BASE_URL}tabs-img-2.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-4.jpg`, `${import.meta.env.BASE_URL}tabs-img-4.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-6.jpg`, `${import.meta.env.BASE_URL}tabs-img-6.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-8.jpg`, `${import.meta.env.BASE_URL}tabs-img-8.webp`]
             ]
         },
 
         {
             'tabName': t?.tabs_section?.viewBtn.toLowerCase(),
             'images': [
-                ['/tabs-img-3.jpg', '/tabs-img-3.webp'],
-                ['/tabs-img-7.jpg', '/tabs-img-7.webp'],
-                ['/tabs-img-4.jpg', '/tabs-img-4.webp'],
-                ['/tabs-img-2.jpg', '/tabs-img-2.webp'],
-                ['/tabs-img-5.jpg', '/tabs-img-5.webp'],
-                ['/tabs-img-6.jpg', '/tabs-img-6.webp'],
-                ['/tabs-img-1.jpg', '/tabs-img-1.webp'],
-                ['/tabs-img-8.jpg', '/tabs-img-8.webp']
+                [`${import.meta.env.BASE_URL}tabs-img-3.jpg`, `${import.meta.env.BASE_URL}tabs-img-3.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-7.jpg`, `${import.meta.env.BASE_URL}tabs-img-7.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-4.jpg`, `${import.meta.env.BASE_URL}tabs-img-4.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-2.jpg`, `${import.meta.env.BASE_URL}tabs-img-2.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-5.jpg`, `${import.meta.env.BASE_URL}tabs-img-5.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-6.jpg`, `${import.meta.env.BASE_URL}tabs-img-6.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-1.jpg`, `${import.meta.env.BASE_URL}tabs-img-1.webp`],
+                [`${import.meta.env.BASE_URL}tabs-img-8.jpg`, `${import.meta.env.BASE_URL}tabs-img-8.webp`]
             ]
         }
     ]
