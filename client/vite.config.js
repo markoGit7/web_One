@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/web_One/',
   build: {
-    outDir: '../dist', // output dist folder relative to root
+    outDir: './dist', // output dist folder relative to root
   },
 
   server: {
