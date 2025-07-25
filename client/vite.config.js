@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   root: './client', 
   plugins: [react()],
-  base: '/web_One/',
+  base: '/',
   build: {
     outDir: './dist', // output dist folder relative to root
   },
