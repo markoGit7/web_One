@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
 
     "build": "vite build --config client/vite.config.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d client/dist"
   },
   "repository": {
     "type": "git",
