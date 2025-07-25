@@ -91,10 +91,10 @@ function Footer( { setOpen }) {
 
     const footerObj = [
         {'media': [
-            [{'image':'/instagram.svg'}, {'link': 'https://www.instagram.com/instagram/?hl=en'}],
-            [{'image':'/ball.svg'}, {'link': 'https://dribbble.com/'}],
-            [{'image':'/x.svg'}, {'link': 'https://x.com/x?lang=en'}],
-            [{'image':'/youtube.svg'}, {'link': 'https://youtube.com/'}],
+            [{'image':`${import.meta.env.BASE_URL}instagram.svg`}, {'link': 'https://www.instagram.com/instagram/?hl=en'}],
+            [{'image':`${import.meta.env.BASE_URL}ball.svg`}, {'link': 'https://dribbble.com/'}],
+            [{'image':`${import.meta.env.BASE_URL}x.svg`}, {'link': 'https://x.com/x?lang=en'}],
+            [{'image':`${import.meta.env.BASE_URL}youtube.svg`}, {'link': 'https://youtube.com/'}],
         ]},
 
         {'company': [
@@ -127,7 +127,7 @@ function Footer( { setOpen }) {
                     <div className="grid grid-cols-12 -mx-4 gap-y-12 lg:gap-y-0">
                         <div className="col-span-12 lg:col-span-3 px-4 text-gray-200 order-2 lg:order-1 text-center lg:text-start">
                             <div className="mb-10 inline-block">
-                                <img src="/Footer-logo.svg" alt="footer-logo" width="191" height="30" className="w-[191px] max-w-full h-auto" />
+                                <img src={`${import.meta.env.BASE_URL}Footer-logo.svg`} alt="footer-logo" width="191" height="30" className="w-[191px] max-w-full h-auto" />
                             </div>
 
                             <div className="mb-10">
@@ -205,7 +205,7 @@ function Footer( { setOpen }) {
                                                 left-3 peer-focus:-top-[8px] peer-focus:left-2 peer-focus:text-[12px] peer-focus:text-white peer-invalid:-top-[8px] peer-invalid:text-white peer-invalid:left-2 peer-invalid:text-[12px] transition-all duration-400 ease-in-out pointer-events-none text-sm text-gray-300">{t?.footer?.upToDate?.inp}</label>
 
                                                 <button className="absolute right-3 top-1/2 -translate-y-1/2" type='submit'>
-                                                    <img src="/button-arrow.svg" alt="button-arrow" width="18" height="18" className="w-auto h-auto max-w-[18px] max-h-[18px]" />
+                                                    <img src={`${import.meta.env.BASE_URL}button-arrow.svg`} alt="button-arrow" width="18" height="18" className="w-auto h-auto max-w-[18px] max-h-[18px]" />
                                                 </button>
                                             </div>
                                         </form>

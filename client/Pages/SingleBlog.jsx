@@ -53,8 +53,8 @@ function SingleBlog( {onOpenContactModal} ) {
 
                                 <div className="mb-8 h-[250px]">
                                     <picture>
-                                        <source srcSet="/article-img-1.webp" type="image/webp" />
-                                        <img src="/article-img-1.jpg" alt="article-img-1.jpg" width="750" height="250" className="h-full w-full object-cover object-center" />
+                                        <source srcSet={`${import.meta.env.BASE_URL}article-img-1.webp`} type="image/webp" />
+                                        <img src={`${import.meta.env.BASE_URL}article-img-1.jpg`} alt="article-img-1.jpg" width="750" height="250" className="h-full w-full object-cover object-center" />
                                     </picture>
                                 </div>
                                 <div className="mb-8 text-base font-normal !leading-normal text-colorgray700">
@@ -65,8 +65,8 @@ function SingleBlog( {onOpenContactModal} ) {
 
                                 <div className="mb-8 h-[250px]">
                                     <picture>
-                                        <source srcSet="/article-img-2.webp" type="image/webp" />
-                                        <img src="/article-img-2.jpg" alt="article-img-2.jpg" width="750" height="250" className="h-full w-full object-cover object-center" />
+                                        <source srcSet={`${import.meta.env.BASE_URL}article-img-2.webp`} type="image/webp" />
+                                        <img src={`${import.meta.env.BASE_URL}article-img-2.jpg`} alt="article-img-2.jpg" width="750" height="250" className="h-full w-full object-cover object-center" />
                                     </picture>
                                 </div>
 
@@ -82,8 +82,8 @@ function SingleBlog( {onOpenContactModal} ) {
                                 <div className="mb-[26px] flex flex-row flex-wrap items-center justify-center xl:justify-start">
                                     <div className="size-[109px] max-w-full rounded-[50%]">
                                         <picture>
-                                            <source srcSet="/profile.webp" type="image/webp" />
-                                            <img src="/profile.jpg" alt="" width="110" height="111" className="h-full w-full rounded-[50%]" />
+                                            <source srcSet={`${import.meta.env.BASE_URL}profile.webp`} type="image/webp" />
+                                            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="" width="110" height="111" className="h-full w-full rounded-[50%]" />
                                         </picture>
                                     </div>
 
@@ -140,8 +140,8 @@ function SingleBlog( {onOpenContactModal} ) {
                     {/* Background Image */}
                     <div className="absolute inset-0 before:absolute before:inset-0 before:bg-gray-900/90 before:content-['']">
                         <picture>
-                            <source srcSet="/background-img-article.webp" type="image/webp" />
-                            <img src="/background-img-article.jpg" alt="background-img-article" width="1437" height="256" className="h-full w-full object-cover object-center" />
+                            <source srcSet={`${import.meta.env.BASE_URL}background-img-article.webp`} type="image/webp" />
+                            <img src={`${import.meta.env.BASE_URL}background-img-article.jpg`} alt="background-img-article" width="1437" height="256" className="h-full w-full object-cover object-center" />
                         </picture>
                     </div>
                 </section>

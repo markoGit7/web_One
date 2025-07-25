@@ -49,7 +49,7 @@ function Home( { onOpenContactModal } ) {
                                     <div className="relative mb-4 inline-block w-[50px] max-w-full">
                                         <div className="h-[49px] max-w-[50px] rounded-bl-[5px] rounded-br-[18px] rounded-tl-[10px] rounded-tr-[5px] bg-blue-100"></div>
                                         <div className="absolute -left-[15px] top-[3px] z-0 h-[30px] w-12">
-                                            <img src="/card-img-1.svg" alt="#" width="48" height="27" className="h-auto max-h-[30px] w-auto max-w-12" />
+                                            <img src={`${import.meta.env.BASE_URL}card-img-1.svg`} alt="#" width="48" height="27" className="h-auto max-h-[30px] w-auto max-w-12" />
                                         </div>
                                     </div>
                                     {/* Text */}
@@ -70,7 +70,7 @@ function Home( { onOpenContactModal } ) {
                                     <div className="relative mb-4 inline-block w-[50px] max-w-full">
                                         <div className="h-[49px] max-w-[50px] rounded-bl-[5px] rounded-br-[18px] rounded-tl-[10px] rounded-tr-[5px] bg-blue-100"></div>
                                         <div className="absolute -left-[8.5px] top-[2px] z-0 h-[30px] w-12">
-                                            <img src="/card-img-2.svg" alt="#" width="36" height="31" className="h-auto max-h-[30px] w-auto max-w-12" />
+                                            <img src={`${import.meta.env.BASE_URL}card-img-2.svg`} alt="#" width="36" height="31" className="h-auto max-h-[30px] w-auto max-w-12" />
                                         </div>
                                     </div>
                                     {/* Text */}
@@ -91,7 +91,7 @@ function Home( { onOpenContactModal } ) {
                                     <div className="relative mb-4 inline-block w-[50px] max-w-full">
                                         <div className="h-[49px] max-w-[50px] rounded-bl-[5px] rounded-br-[18px] rounded-tl-[10px] rounded-tr-[5px] bg-blue-100"></div>
                                         <div className="absolute -left-[7.3px] top-[2px] z-0 h-[30px] w-12">
-                                            <img src="/card-img-3.svg" alt="#" width="34" height="30" className="h-auto max-h-[30px] w-auto max-w-12 fill-[#103E13]" />
+                                            <img src={`${import.meta.env.BASE_URL}card-img-3.svg`} alt="#" width="34" height="30" className="h-auto max-h-[30px] w-auto max-w-12 fill-[#103E13]" />
                                         </div>
                                     </div>
                                     {/* Text */}
@@ -114,7 +114,7 @@ function Home( { onOpenContactModal } ) {
                         <div className="-mx-3 grid grid-cols-12 items-center gap-y-8 lg:gap-y-0">
                             <div className="col-span-12 px-3 text-center lg:col-span-5 lg:text-start">
                                 <div className="image inline-block max-w-[442px]">
-                                    <img src="/text-image.svg" alt="#" width="442" height="329" className="h-auto w-full" />
+                                    <img src={`${import.meta.env.BASE_URL}text-image.svg`} alt="#" width="442" height="329" className="h-auto w-full" />
                                 </div>
                             </div>
                             <div className="col-span-12 px-3 lg:col-span-7">
@@ -155,7 +155,7 @@ function Home( { onOpenContactModal } ) {
                                                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 flex items-center justify-center">
                                                     <picture>
                                                         <source srcSet="/two_human_icon.webp" type="image/webp" />
-                                                        <img src="/two_human_icon.png" alt="humans-icon" width="48" height="32" className="max-w-[47px] max-h-9 w-auto h-auto" /> 
+                                                        <img src={`${import.meta.env.BASE_URL}two_human_icon.png`} alt="humans-icon" width="48" height="32" className="max-w-[47px] max-h-9 w-auto h-auto" /> 
                                                     </picture>
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">2,245,341</h3>
@@ -169,7 +169,7 @@ function Home( { onOpenContactModal } ) {
                                                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 flex items-center justify-center">
                                                 <picture>
                                                         <source srcSet="/blue-hands.webp" type="image/webp" />
-                                                        <img src="/blue-hands.png" alt="blue-hands-icon" width="34" height="30" className="max-w-[47px] max-h-9 w-auto h-auto" />
+                                                        <img src={`${import.meta.env.BASE_URL}blue-hands.png`} alt="blue-hands-icon" width="34" height="30" className="max-w-[47px] max-h-9 w-auto h-auto" />
                                                 </picture>
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">46,328</h3>
@@ -181,7 +181,7 @@ function Home( { onOpenContactModal } ) {
                                         <div className="w-full sm:w-1/2 px-[15px]">
                                             <div className="relative pl-16 inline-block text-start break-all">
                                                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 flex items-center justify-center">
-                                                    <img src="/finger-icon.svg" alt="finger-icon" width="34" height="38" className="max-w-[47px] max-h-9 w-auto h-auto" />
+                                                    <img src={`${import.meta.env.BASE_URL}finger-icon.svg`} alt="finger-icon" width="34" height="38" className="max-w-[47px] max-h-9 w-auto h-auto" />
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">828,867</h3>
                                                 <span className="text-base font-normal text-gray-600">{t?.stats_section.bottom_left}</span>
@@ -192,7 +192,7 @@ function Home( { onOpenContactModal } ) {
                                         <div className="w-full sm:w-1/2 px-[15px]">
                                             <div className="relative pl-16 inline-block text-start break-all">
                                                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 flex items-center justify-center">
-                                                    <img src="/wallet-icon.svg" alt="wallet-icon" width="42" height="34" className="max-w-[47px] max-h-9 w-auto h-auto" />
+                                                    <img src={`${import.meta.env.BASE_URL}wallet-icon.svg`} alt="wallet-icon" width="42" height="34" className="max-w-[47px] max-h-9 w-auto h-auto" />
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">1,926,436</h3>
                                                 <span className="text-base font-normal text-gray-600">{t?.stats_section.bottom_right}</span>
@@ -211,7 +211,7 @@ function Home( { onOpenContactModal } ) {
                         <div className="-mx-3 grid grid-cols-12 items-center gap-y-8 lg:gap-y-0">
                             <div className="col-span-12 px-3 text-center lg:col-span-5 lg:text-start">
                                 <div className="image inline-block max-w-[442px]">
-                                    <img src="/text-image2.svg" alt="#" width="442" height="434" className="h-auto w-full" />
+                                    <img src={`${import.meta.env.BASE_URL}text-image2.svg`} alt="#" width="442" height="434" className="h-auto w-full" />
                                 </div>
                             </div>
                             <div className="col-span-12 px-3 lg:col-span-7">
@@ -237,7 +237,7 @@ function Home( { onOpenContactModal } ) {
                         <div className="-mx-8 grid grid-cols-12 items-center gap-y-4 sm:gap-y-8 lg:gap-y-0">
                             <div className="col-span-12 px-8 text-center lg:col-span-4 lg:text-start">
                                 <div className="image inline-block max-w-[326px] rounded-lg">
-                                    <img src="/tesla.jpg" alt="#" width="324" height="324" className="h-auto w-full rounded-lg object-cover object-center" />
+                                    <img src={`${import.meta.env.BASE_URL}tesla.jpg`} alt="#" width="324" height="324" className="h-auto w-full rounded-lg object-cover object-center" />
                                 </div>
                             </div>
                             <div className="col-span-12 px-8 text-center lg:col-span-8 lg:text-start">
@@ -257,42 +257,42 @@ function Home( { onOpenContactModal } ) {
                                     {/* Icon 1 */}
                                     <div className="px-3">
                                         <a href="#">
-                                            <img src="/client-1.svg" alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
+                                            <img src={`${import.meta.env.BASE_URL}client-1.svg`} alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
                                         </a>
                                     </div>
 
                                     {/* Icon 2 */}
                                     <div className="px-3">
                                         <a href="#">
-                                            <img src="/client-2.svg" alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
+                                            <img src={`${import.meta.env.BASE_URL}client-2.svg`} alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
                                         </a>
                                     </div>
 
                                     {/* Icon 3 */}
                                     <div className="px-3">
                                         <a href="#">
-                                            <img src="/client-3.svg" alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
+                                            <img src={`${import.meta.env.BASE_URL}client-3.svg`} alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
                                         </a>
                                     </div>
 
                                     {/* Icon 4 */}
                                     <div className="px-3">
                                         <a href="#">
-                                            <img src="/client-4.svg" alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
+                                            <img src={`${import.meta.env.BASE_URL}client-4.svg`} alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
                                         </a>
                                     </div>
 
                                     {/* Icon 5 */}
                                     <div className="px-3">
                                         <a href="#">
-                                            <img src="/client-5.svg" alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
+                                            <img src={`${import.meta.env.BASE_URL}client-5.svg`} alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
                                         </a>
                                     </div>
 
                                     {/* Icon 6 */}
                                     <div className="px-3">
                                         <a href="#">
-                                            <img src="/client-6.svg" alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
+                                            <img src={`${import.meta.env.BASE_URL}client-6.svg`} alt="#" className="h-auto max-h-[40px] w-auto max-w-[55px]" />
                                         </a>
                                     </div>
                                 </div>
@@ -320,8 +320,8 @@ function Home( { onOpenContactModal } ) {
                                     {/* Image */}
                                     <div className="w-full h-[286px] overflow-hidden rounded-lg">
                                         <picture>
-                                            <source srcSet="/absolute-img-1.webp" type="image/webp" />
-                                            <img src="/absolute-img-1.jpg" alt="img1" width="368" height="287" className="w-[200vw] sm:w-full h-full object-cover object-center rounded-lg group-hover:scale-1 group-hover:rotate-0 sm:group-hover:scale-125 sm:group-hover:rotate-12 transition-all duration-1000 ease-in-out" />
+                                            <source srcSet={`${import.meta.env.BASE_URL}absolute-img-1.webp`} type="image/webp" />
+                                            <img src={`${import.meta.env.BASE_URL}absolute-img-1.jpg`} alt="img1" width="368" height="287" className="w-[200vw] sm:w-full h-full object-cover object-center rounded-lg group-hover:scale-1 group-hover:rotate-0 sm:group-hover:scale-125 sm:group-hover:rotate-12 transition-all duration-1000 ease-in-out" />
                                         </picture>
                                     </div>
 
@@ -345,8 +345,8 @@ function Home( { onOpenContactModal } ) {
                                     {/* Image */}
                                     <div className="w-full h-[286px] overflow-hidden rounded-lg">
                                         <picture>
-                                            <source srcSet="/absolute-img-2.webp" type="image/webp" />
-                                            <img src="/absolute-img-2.jpg" alt="img2" width="368" height="287" className="w-full h-full object-cover object-center rounded-lg group-hover:scale-1 group-hover:rotate-0 sm:group-hover:scale-125 sm:group-hover:rotate-12 transition-all duration-1000 ease-in-out" />
+                                            <source srcSet={`${import.meta.env.BASE_URL}absolute-img-2.webp`} type="image/webp" />
+                                            <img src={`${import.meta.env.BASE_URL}absolute-img-2.jpg`} width="368" height="287" className="w-full h-full object-cover object-center rounded-lg group-hover:scale-1 group-hover:rotate-0 sm:group-hover:scale-125 sm:group-hover:rotate-12 transition-all duration-1000 ease-in-out" />
                                         </picture>
                                     </div>
 
@@ -370,8 +370,8 @@ function Home( { onOpenContactModal } ) {
                                     {/* Image */}
                                     <div className="w-full h-[286px] overflow-hidden rounded-lg">
                                         <picture>
-                                            <source srcSet="/absolute-img-3.webp" type="image/webp" />
-                                            <img src="/absolute-img-3.jpg" alt="img3" width="368" height="287" className="w-full h-full object-cover object-center rounded-lg group-hover:scale-1 group-hover:rotate-0 sm:group-hover:scale-125 sm:group-hover:rotate-12 transition-all duration-1000 ease-in-out" />
+                                            <source srcSet={`${import.meta.env.BASE_URL}absolute-img-3.webp`} type="image/webp" />
+                                            <img src={`${import.meta.env.BASE_URL}absolute-img-3.jpg`} width="368" height="287" className="w-full h-full object-cover object-center rounded-lg group-hover:scale-1 group-hover:rotate-0 sm:group-hover:scale-125 sm:group-hover:rotate-12 transition-all duration-1000 ease-in-out" />
                                         </picture>
                                     </div>
 

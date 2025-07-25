@@ -26,7 +26,7 @@ function Slider() {
             "title": t?.slider?.slide1?.title,
             "blue": t?.slider?.slide1?.blue,
             "text": t?.slider?.slide1?.text,
-            "image": "/carousel-img-1.svg",
+            "image": `${import.meta.env.BASE_URL}carousel-img-1.svg`,
             "button": <RegisterButton/>
         },
 
@@ -34,7 +34,7 @@ function Slider() {
             "title": t?.slider?.slide2?.title,
             "blue": t?.slider?.slide2?.blue,
             "text": t?.slider?.slide2?.text,
-            "image": "/carousel-img-2.svg",
+            "image": `${import.meta.env.BASE_URL}carousel-img-2.svg`,
             "button": <RegisterButton/>
         },
 
@@ -42,7 +42,7 @@ function Slider() {
             "title": t?.slider?.slide3?.title,
             "blue": t?.slider?.slide3?.blue,
             "text": t?.slider?.slide3?.text,
-            "image": "/carousel-img-3.svg",
+            "image": `${import.meta.env.BASE_URL}carousel-img-3.svg`,
             "button": <RegisterButton/>
         }
     ];
