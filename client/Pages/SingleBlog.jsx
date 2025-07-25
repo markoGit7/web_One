@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import {Header, ContactUS_Button, Form, Footer} from '../src/Components';
-import texts from '../src/i18n/texts';
+import {texts} from '../src/i18n/texts';
 import { Link, useParams} from 'react-router-dom';
 
 function SingleBlog( {onOpenContactModal} ) {

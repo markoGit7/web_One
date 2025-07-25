@@ -1,4 +1,4 @@
-const languageObject = {
+export const texts = {
     en: {
         // ... other sections like nav, blogs, testimonial ...
 
@@ -639,5 +639,3 @@ const languageObject = {
 
     },
 };
-
-export default languageObject; // Export Default Data

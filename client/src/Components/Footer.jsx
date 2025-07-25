@@ -1,7 +1,7 @@
 import {React, useState, useRef, useEffect} from 'react';
 import {Form, ContactUS_Button} from '../Components';
 import { Link } from 'react-router-dom';
-import texts from '../i18n/texts';
+import {texts} from '../i18n/texts';
 import { useParams} from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import {After_Submit_Message} from '../Components'
@@ -98,19 +98,19 @@ function Footer( { setOpen }) {
         ]},
 
         {'company': [
-            [t.footer.company.lists[0], '/about'], 
-            [t.footer.company.lists[1], '/blogs'], 
-            [t.footer.company.lists[2], '/contact'], 
-            [t.footer.company.lists[3], '/pricing'], 
-            [t.footer.company.lists[4], '/testemonials']
+            [t?.footer?.company?.lists[0], '/about'], 
+            [t?.footer?.company?.lists[1], '/blogs'], 
+            [t?.footer?.company?.lists[2], '/contact'], 
+            [t?.footer?.company?.lists[3], '/pricing'], 
+            [t?.footer?.company?.lists[4], '/testemonials']
         ]},
 
         {'support': [
-            [t.footer.support.lists[0], '/help'], 
-            [t.footer.support.lists[1], '/terms_services'], 
-            [t.footer.support.lists[2], '/legal'], 
-            [t.footer.support.lists[3], '/policy'], 
-            [t.footer.support.lists[4], '/status']
+            [t?.footer?.support?.lists[0], '/help'], 
+            [t?.footer?.support?.lists[1], '/terms_services'], 
+            [t?.footer?.support?.lists[2], '/legal'], 
+            [t?.footer?.support?.lists[3], '/policy'], 
+            [t?.footer?.support?.lists[4], '/status']
         ]}
     ];
     
@@ -131,7 +131,7 @@ function Footer( { setOpen }) {
                             </div>
 
                             <div className="mb-10">
-                                <p className="mb-2">{t.footer.copy}</p>
+                                <p className="mb-2">{t?.footer?.copy}</p>
                             </div>
 
                             <div className="inline-block">
@@ -160,7 +160,7 @@ function Footer( { setOpen }) {
 
                             <div className="grid grid-cols-12 -mx-6 gap-y-10 md:gap-y-0">
                                     <div className="col-span-6 md:col-span-3 px-6 text-center md:text-start">
-                                        <h3 className="mb-[18px] font-semibold text-xl text-white">{t.footer.company.title}</h3>
+                                        <h3 className="mb-[18px] font-semibold text-xl text-white">{t?.footer?.company?.title}</h3>
                                         <ul>
 
                                             {
@@ -182,7 +182,7 @@ function Footer( { setOpen }) {
                                     </div>
 
                                     <div className="col-span-6 md:col-span-3 px-6 text-center md:text-start">
-                                        <h3 className="mb-[18px] font-semibold text-xl text-white">{t.footer.support.title}</h3>
+                                        <h3 className="mb-[18px] font-semibold text-xl text-white">{t?.footer?.support?.title}</h3>
                                         <ul>
 
                                             {
@@ -197,12 +197,12 @@ function Footer( { setOpen }) {
                                     </div>
 
                                     <div className="col-span-12 md:col-span-6 px-6">
-                                        <h3 className="mb-[18px] font-semibold text-xl text-white text-center md:text-start">{t.footer.upToDate.title}</h3>
+                                        <h3 className="mb-[18px] font-semibold text-xl text-white text-center md:text-start">{t?.footer?.upToDate?.title}</h3>
                                         <form action="#" ref={form} onSubmit={sendEmail}>
                                             <div className="relative">
                                                 <input type="email" value={inputTxt} onChange={(e) => setInputTxt(e.target.value)} name="user_email" id='email' className="w-full bg-white/20 ring-0 border-[2px] border-gray-800 outline-none p-[9px_33px_11px_12px] rounded-lg text-white focus:border-[2px] focus:border-colorblue peer peer-valid:focus:opacity-0 transition-all duration-400 ease-in-out autofill:bg-transparent" />
                                                 <label htmlFor="email" className="absolute top-1/2 -translate-y-1/2
-                                                left-3 peer-focus:-top-[8px] peer-focus:left-2 peer-focus:text-[12px] peer-focus:text-white peer-invalid:-top-[8px] peer-invalid:text-white peer-invalid:left-2 peer-invalid:text-[12px] transition-all duration-400 ease-in-out pointer-events-none text-sm text-gray-300">{t.footer.upToDate.inp}</label>
+                                                left-3 peer-focus:-top-[8px] peer-focus:left-2 peer-focus:text-[12px] peer-focus:text-white peer-invalid:-top-[8px] peer-invalid:text-white peer-invalid:left-2 peer-invalid:text-[12px] transition-all duration-400 ease-in-out pointer-events-none text-sm text-gray-300">{t?.footer?.upToDate?.inp}</label>
 
                                                 <button className="absolute right-3 top-1/2 -translate-y-1/2" type='submit'>
                                                     <img src="/button-arrow.svg" alt="button-arrow" width="18" height="18" className="w-auto h-auto max-w-[18px] max-h-[18px]" />

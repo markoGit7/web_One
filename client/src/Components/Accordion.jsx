@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import texts from '../i18n/texts';
+import {texts} from '../i18n/texts';
 import { useParams} from 'react-router-dom';
 
 function Accordion() {
@@ -9,18 +9,18 @@ function Accordion() {
 
     const accordionObj = [
         {
-        'title': t.accodrion_section.accordion1.heading,
-        'p': t.accodrion_section.accordion1.text
+        'title': t?.accodrion_section?.accordion1?.heading,
+        'p': t?.accodrion_section?.accordion1?.text
         },
 
         {
-        'title': t.accodrion_section.accordion2.heading,
-        'p': t.accodrion_section.accordion2.text
+        'title': t?.accodrion_section?.accordion2?.heading,
+        'p': t?.accodrion_section?.accordion2?.text
         },
 
         {
-        'title': t.accodrion_section.accordion3.heading,
-        'p': t.accodrion_section.accordion3.text
+        'title': t?.accodrion_section?.accordion3?.heading,
+        'p': t?.accodrion_section?.accordion3?.text
         }
     ];
 
@@ -81,7 +81,7 @@ function Accordion() {
                 <div className="mb-[30px] text-center w-full">
                     <span className="block text-colorblue font-bold text-sm !leading-[203%] tracking-[6.3px] mb-[10px]">FAQ</span>
                     <h2 className="text-[27px] font-bold text-colorgray900 min-[450px]:text-3xl md:text-[52px] !leading-tight">
-                        {t.accodrion_section.title}
+                        {t?.accodrion_section?.title}
                     </h2>
                     </div>
 

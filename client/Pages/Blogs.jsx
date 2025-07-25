@@ -1,5 +1,5 @@
 import React from 'react'
-import texts from '../src/i18n/texts';
+import {texts} from '../src/i18n/texts';
 import { useParams} from 'react-router-dom';
 
 import {Header, Pagination, BlogCards, Footer} from '../src/Components';

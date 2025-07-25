@@ -1,5 +1,5 @@
 import React from 'react'
-import texts from '../i18n/texts';
+import {texts} from '../i18n/texts';
 import { useParams} from 'react-router-dom';
 
 function BlogCards() {

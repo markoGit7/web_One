@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import { Link, useParams, NavLink } from 'react-router-dom';
-import texts from '../i18n/texts';
+import {texts} from '../i18n/texts.js';
 import {LanguageDropdown} from '../Components'
 
 
@@ -12,12 +12,12 @@ function Header() {
     const t = texts[lang];
 
     const navList = [
-        [t.nav[0], `/${lang}`],
-        [t.nav[1], `/${lang}/services`],
-        [t.nav[2], `/${lang}/feature`],
-        [t.nav[3], `/${lang}/product`],
-        [t.nav[4], `/${lang}/blogs`],
-        [t.nav[5], `/${lang}/faq`]
+        [t?.nav[0], `/${lang}`],
+        [t?.nav[1], `/${lang}/services`],
+        [t?.nav[2], `/${lang}/feature`],
+        [t?.nav[3], `/${lang}/product`],
+        [t?.nav[4], `/${lang}/blogs`],
+        [t?.nav[5], `/${lang}/faq`]
     ]
     
        

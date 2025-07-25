@@ -3,7 +3,7 @@ import ReactSlick from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import {RegisterButton} from '../Components';
-import texts from '../i18n/texts'
+import {texts} from '../i18n/texts'
 import { useParams} from 'react-router-dom';
 
 
@@ -23,25 +23,25 @@ function Slider() {
     
     const slides = [
         {
-            "title": t.slider.slide1.title,
-            "blue": t.slider.slide1.blue,
-            "text": t.slider.slide1.text,
+            "title": t?.slider?.slide1?.title,
+            "blue": t?.slider?.slide1?.blue,
+            "text": t?.slider?.slide1?.text,
             "image": "/carousel-img-1.svg",
             "button": <RegisterButton/>
         },
 
         {
-            "title": t.slider.slide2.title,
-            "blue": t.slider.slide2.blue,
-            "text": t.slider.slide2.text,
+            "title": t?.slider?.slide2?.title,
+            "blue": t?.slider?.slide2?.blue,
+            "text": t?.slider?.slide2?.text,
             "image": "/carousel-img-2.svg",
             "button": <RegisterButton/>
         },
 
         {
-            "title": t.slider.slide3.title,
-            "blue": t.slider.slide3.blue,
-            "text": t.slider.slide3.text,
+            "title": t?.slider?.slide3?.title,
+            "blue": t?.slider?.slide3?.blue,
+            "text": t?.slider?.slide3?.text,
             "image": "/carousel-img-3.svg",
             "button": <RegisterButton/>
         }

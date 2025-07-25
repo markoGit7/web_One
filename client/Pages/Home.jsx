@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import {Header, Slider, ContactUS_Button, RegisterButton, InfinitSpinIcons, Tabs, Accordion, Footer, After_Submit_Message} from '../src/Components';
-import texts from '../src/i18n/texts';
+import {texts} from '../src/i18n/texts';
 import { useParams} from 'react-router-dom';
 
 function Home( { onOpenContactModal } ) {
@@ -17,10 +17,10 @@ function Home( { onOpenContactModal } ) {
                     <div className="mx-auto max-w-[1194px] px-5">
                         <div className="mb-[41px] text-center">
                             <h2 className="mb-2 text-[27px] font-semibold !leading-[122%] text-gray-700 min-[450px]:text-3xl md:text-4xl">
-                                {t.icons_section.title}
+                                {t?.icons_section?.title}
                             </h2>
                             <p className="font-normal text-gray-600">
-                                {t.icons_section.text}
+                                {t?.icons_section?.text}
                             </p>
                         </div>
 
@@ -35,10 +35,10 @@ function Home( { onOpenContactModal } ) {
                     <div className="mx-auto max-w-[1194px] px-5">
                         <div className="mb-4 inline-block max-w-[542px]">
                             <h2 className="mb-2 text-[27px] font-semibold !leading-[122%] text-gray-700 min-[450px]:text-3xl md:text-4xl">
-                                {t.threeCards_section.title}
+                                {t?.threeCards_section.title}
                             </h2>
                             <p className="font-normal text-gray-600">
-                                {t.threeCards_section.text}
+                                {t?.threeCards_section.text}
                             </p>
                         </div>
                         <div className="-mx-16 flex flex-row flex-wrap items-stretch justify-center gap-y-4 lg:justify-start">
@@ -54,11 +54,11 @@ function Home( { onOpenContactModal } ) {
                                     </div>
                                     {/* Text */}
                                     <h2 className="mb-2 text-[23px] font-bold leading-[128%] text-gray-700 min-[450px]:text-[28px]">
-                                        {t.threeCards_section.card1.title}
+                                        {t?.threeCards_section.card1.title}
                                     </h2>
 
                                     <p className="text-sm font-normal text-gray-600">
-                                        {t.threeCards_section.card1.text}
+                                        {t?.threeCards_section.card1.text}
                                     </p>
                                 </div>
                             </div>
@@ -75,11 +75,11 @@ function Home( { onOpenContactModal } ) {
                                     </div>
                                     {/* Text */}
                                     <h2 className="mb-2 text-[23px] font-bold leading-[128%] text-gray-700 min-[450px]:text-[28px]">
-                                        {t.threeCards_section.card2.title}
+                                        {t?.threeCards_section.card2.title}
                                     </h2>
 
                                     <p className="text-sm font-normal text-gray-600">
-                                        {t.threeCards_section.card2.text}
+                                        {t?.threeCards_section.card2.text}
                                     </p>
                                 </div>
                             </div>
@@ -96,11 +96,11 @@ function Home( { onOpenContactModal } ) {
                                     </div>
                                     {/* Text */}
                                     <h2 className="mb-2 text-[23px] font-bold leading-[128%] text-gray-700 min-[450px]:text-[28px]">
-                                        {t.threeCards_section.card3.title}
+                                        {t?.threeCards_section.card3.title}
                                     </h2>
 
                                     <p className="text-sm font-normal text-gray-600">
-                                        {t.threeCards_section.card3.text}
+                                        {t?.threeCards_section.card3.text}
                                     </p>
                                 </div>
                             </div>
@@ -120,11 +120,11 @@ function Home( { onOpenContactModal } ) {
                             <div className="col-span-12 px-3 lg:col-span-7">
                                 <div className="max-w-full text-center lg:max-w-[601px] lg:text-start">
                                     <h2 className="mb-4 text-2xl font-semibold !leading-[122%] text-gray-700 min-[350px]:text-3xl min-[475px]:text-4xl">
-                                        {t.textImage_section1.title}
+                                        {t?.textImage_section1.title}
                                     </h2>
 
                                     <p className="text-sm font-normal text-gray-600">
-                                        {t.textImage_section1.text}
+                                        {t?.textImage_section1.text}
                                     </p>
 
                                     <RegisterButton/>
@@ -141,9 +141,9 @@ function Home( { onOpenContactModal } ) {
                         <div className="-mx-9 grid grid-cols-12 flex-row flex-wrap items-center gap-y-9 md:gap-y-0">
                             <div className="col-span-12 md:col-span-5 px-9 text-center md:text-start">
                                 <div className="mb-2 w-full md:w-[415px] max-w-full">
-                                    <h2 className="text-2xl font-semibold !leading-[122%] text-gray-700 min-[350px]:text-3xl min-[475px]:text-4xl">{t.stats_section.title}<span className="text-colorblue block md:inline-block">{t.stats_section.blue}</span></h2>
+                                    <h2 className="text-2xl font-semibold !leading-[122%] text-gray-700 min-[350px]:text-3xl min-[475px]:text-4xl">{t?.stats_section.title}<span className="text-colorblue block md:inline-block">{t?.stats_section.blue}</span></h2>
                                 </div>
-                                <p className="text-base font-normal text-gray-600">{t.stats_section.text}</p>
+                                <p className="text-base font-normal text-gray-600">{t?.stats_section.text}</p>
                             </div>
                             <div className="col-span-12 md:col-span-7 px-9">
 
@@ -159,7 +159,7 @@ function Home( { onOpenContactModal } ) {
                                                     </picture>
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">2,245,341</h3>
-                                                <span className="text-base font-normal text-gray-600">{t.stats_section.top_left}</span>
+                                                <span className="text-base font-normal text-gray-600">{t?.stats_section.top_left}</span>
                                             </div>
                                         </div>
                         
@@ -173,7 +173,7 @@ function Home( { onOpenContactModal } ) {
                                                 </picture>
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">46,328</h3>
-                                                <span className="text-base font-normal text-gray-600">{t.stats_section.top_right}</span>
+                                                <span className="text-base font-normal text-gray-600">{t?.stats_section.top_right}</span>
                                             </div>
                                         </div>
 
@@ -184,7 +184,7 @@ function Home( { onOpenContactModal } ) {
                                                     <img src="/finger-icon.svg" alt="finger-icon" width="34" height="38" className="max-w-[47px] max-h-9 w-auto h-auto" />
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">828,867</h3>
-                                                <span className="text-base font-normal text-gray-600">{t.stats_section.bottom_left}</span>
+                                                <span className="text-base font-normal text-gray-600">{t?.stats_section.bottom_left}</span>
                                             </div>
                                         </div>
 
@@ -195,7 +195,7 @@ function Home( { onOpenContactModal } ) {
                                                     <img src="/wallet-icon.svg" alt="wallet-icon" width="42" height="34" className="max-w-[47px] max-h-9 w-auto h-auto" />
                                                 </div>
                                                 <h3 className="text-gray-700 font-bold text-[28px] leading-[128%]">1,926,436</h3>
-                                                <span className="text-base font-normal text-gray-600">{t.stats_section.bottom_right}</span>
+                                                <span className="text-base font-normal text-gray-600">{t?.stats_section.bottom_right}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -217,11 +217,11 @@ function Home( { onOpenContactModal } ) {
                             <div className="col-span-12 px-3 lg:col-span-7">
                                 <div className="max-w-full text-center lg:max-w-[601px] lg:text-start">
                                     <h2 className="mb-4 text-2xl font-semibold !leading-[122%] text-gray-700 min-[350px]:text-3xl min-[475px]:text-4xl">
-                                        {t.textImage_section2.title}
+                                        {t?.textImage_section2.title}
                                     </h2>
 
                                     <p className="text-sm font-normal text-gray-600">
-                                        {t.textImage_section2.text}
+                                        {t?.textImage_section2.text}
                                     </p>
 
                                     <RegisterButton/>
@@ -242,7 +242,7 @@ function Home( { onOpenContactModal } ) {
                             </div>
                             <div className="col-span-12 px-8 text-center lg:col-span-8 lg:text-start">
                                 <p className="mb-4 font-medium !leading-[150%] text-gray-700 lg:text-base">
-                                    {t.author_section.text}
+                                    {t?.author_section.text}
                                 </p>
 
                                 <h3 className="mb-2 text-xl font-semibold text-colorblue">
@@ -250,7 +250,7 @@ function Home( { onOpenContactModal } ) {
                                 </h3>
 
                                 <p className="mb-8 text-sm font-normal !leading-[150%] text-gray-700 sm:text-base">
-                                    {t.author_section.career}
+                                    {t?.author_section.career}
                                 </p>
 
                                 <div className="-mx-3 flex flex-row flex-wrap items-center justify-center gap-y-3 lg:justify-start">
@@ -306,10 +306,10 @@ function Home( { onOpenContactModal } ) {
                     <div className="mx-auto max-w-[1194px] px-5">
                         <div className="mb-4 text-center w-[628px] max-w-full mx-auto">
                             <h2 className="mb-2 text-[27px] font-semibold !leading-[122%] text-gray-700 min-[450px]:text-3xl md:text-4xl">
-                                {t.cards_section.title}
+                                {t?.cards_section.title}
                             </h2>
                             <p className="font-normal text-gray-600">
-                                {t.cards_section.text}
+                                {t?.cards_section.text}
                             </p>
                         </div>
 
@@ -327,11 +327,11 @@ function Home( { onOpenContactModal } ) {
 
                                     {/* Box */}
                                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-gray-100 w-[calc(100%-50px)] p-4 pb-[76px] rounded-lg text-center">
-                                        <h3 className="break-words font-semibold text-[20px] leading-[140%] text-gray-600">{t.cards_section.card1.text}</h3>
+                                        <h3 className="break-words font-semibold text-[20px] leading-[140%] text-gray-600">{t?.cards_section.card1.text}</h3>
                                         <div className="absolute bottom-4 w-full text-center left-0 rounded-b-lg">
                                             <div className="text-colorblue relative font-semibold text-[20px] inline-block  leading-[140%]">
                                                 <a href="article.html" className="pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:bg-right-arrow before:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
-                                                    {t.cards_section.card1.button}
+                                                    {t?.cards_section.card1.button}
                                                 </a>
                                             </div>
                                         </div>
@@ -352,11 +352,11 @@ function Home( { onOpenContactModal } ) {
 
                                     {/* Box */}
                                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-gray-100 w-[calc(100%-50px)] p-4 pb-[76px] rounded-lg text-center">
-                                        <h3 className="break-words font-semibold text-[20px] leading-[140%] text-colorgray600">{t.cards_section.card2.text}</h3>
+                                        <h3 className="break-words font-semibold text-[20px] leading-[140%] text-colorgray600">{t?.cards_section.card2.text}</h3>
                                         <div className="absolute bottom-4 w-full text-center left-0 rounded-b-lg">
                                             <div className="text-colorblue relative font-semibold text-[20px] inline-block  leading-[140%]">
                                                 <a href="article.html" className="pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:bg-right-arrow before:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
-                                                    {t.cards_section.card2.button}
+                                                    {t?.cards_section.card2.button}
                                                 </a>
                                             </div>
                                         </div>
@@ -377,11 +377,11 @@ function Home( { onOpenContactModal } ) {
 
                                     {/* Box */}
                                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-gray-100 w-[calc(100%-50px)] p-4 pb-[76px] rounded-lg text-center">
-                                        <h3 className="break-words font-semibold text-[20px] leading-[140%] text-colorgray600">{t.cards_section.card3.text}</h3>
+                                        <h3 className="break-words font-semibold text-[20px] leading-[140%] text-colorgray600">{t?.cards_section.card3.text}</h3>
                                         <div className="absolute bottom-4 w-full text-center left-0 rounded-b-lg">
                                             <div className="text-colorblue relative font-semibold text-[20px] inline-block  leading-[140%]">
                                                 <a href="article.html" className="pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:bg-right-arrow before:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
-                                                    {t.cards_section.card3.button}
+                                                    {t?.cards_section.card3.button}
                                                 </a>
                                             </div>
                                         </div>
@@ -404,7 +404,7 @@ function Home( { onOpenContactModal } ) {
                     <div className="mx-auto max-w-[1194px] px-5">
                         <div className="mb-[32px] text-center w-[887px] max-w-full mx-auto">
                             <h2 className="text-[30px] font-semibold  text-gray-900 min-[450px]:text-5xl md:text-[64px] !leading-tight">
-                                {t.modal_section.title}
+                                {t?.modal_section.title}
                             </h2>
                         </div>
 
