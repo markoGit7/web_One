@@ -1,5 +1,5 @@
 import {React, useState, useEffect} from 'react'
-import {Header, Slider, ContactUS_Button, RegisterButton, InfinitSpinIcons, Tabs, Accordion, Footer, Form} from '../src/Components';
+import {Header, Slider, ContactUS_Button, RegisterButton, InfinitSpinIcons, Tabs, Accordion, Footer, After_Submit_Message} from '../src/Components';
 import texts from '../src/i18n/texts';
 import { useParams} from 'react-router-dom';
 

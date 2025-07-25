@@ -12,5 +12,5 @@ export { default as BlogCards } from './BlogCards';
 export { default as Form } from './Form';
 export { default as Footer } from './Footer';
 
-
+export { default as After_Submit_Message } from './After_Submit_Message';
 export { default as GoBack } from './GoBack';

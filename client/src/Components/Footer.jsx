@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import texts from '../i18n/texts';
 import { useParams} from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import {After_Submit_Message} from '../Components'
 import { addEmail, getAllEmails, clearEmails } from '../lib/emails';
 
 function Footer( { setOpen }) {
-
     const { lang } = useParams();
     const t = texts[lang];
 
     const [inputTxt, setInputTxt] = useState('');
     const [allEmails, setEmails] = useState([]);
-
+    const [showMessage, setShowMessage] = useState(false);
+    const [messageBox, setMessageBox] = useState({'image':'','text':'','from':''});
+    
     const form = useRef();
 
     const addToData = async () => {
@@ -45,7 +47,13 @@ function Footer( { setOpen }) {
 
         
         if(!isNewUser(inputTxt)) {
-            alert(`User ${inputTxt} is in the data`);
+            setShowMessage(true);
+
+            setMessageBox({'from':'Footer', 'text': `${inputTxt} Already exists`, 'image':'/xmark.png'});
+
+            setTimeout(() => {
+                setShowMessage(false);
+            }, 3000);
             setInputTxt('');
             return;
         }
@@ -62,10 +70,14 @@ function Footer( { setOpen }) {
             .then(() => {
                 
                 addToData();
-
                 setInputTxt('');
+                setMessageBox({'from':'Footer', 'text': `Thank's For Joining Us`, 'image':'/check.webp'});
+                setShowMessage(true);
 
-                alert(`Thanks for joining us ${inputTxt}`);
+                setTimeout(() => {
+                    setShowMessage(false);
+                }, 3000);
+
 
             })
             .catch((error) => {
@@ -105,6 +117,11 @@ function Footer( { setOpen }) {
     
     return (
         <>
+
+            {showMessage && (
+                <After_Submit_Message txt={messageBox.text} image={messageBox.image} comingFrom={messageBox.from} isVisible={showMessage} />
+            )}
+
             <footer className="pb-[74px] pt-[64px] relative w-full bg-gray-800">
                 <div className="mx-auto max-w-[1194px] px-5">
                     <div className="grid grid-cols-12 -mx-4 gap-y-12 lg:gap-y-0">
