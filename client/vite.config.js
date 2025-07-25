@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
 
   // Conditional base depending on environment mode
-  base: mode === 'production' ? '/my-repo-name/' : '/',
+  base: mode === 'production' ? '/web_One/' : '/',
 
   build: {
     outDir: './dist', // output dist folder relative to root
