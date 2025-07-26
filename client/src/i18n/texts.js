@@ -140,7 +140,7 @@ export const texts = {
         },
 
         footer:{
-            copy:'Copyright © 2020 Nexcent ltd. All rights reserved',
+            copy:'Copyright © 2025 Nexcent ltd. All rights reserved',
 
             company:{
                 title:'Company',
@@ -459,7 +459,7 @@ export const texts = {
         },
 
         footer: {
-            copy: 'Авторски права © 2020 Nexcent ДОО. Сите права се задржани.',
+            copy: 'Авторски права © 2025 Nexcent ДОО. Сите права се задржани.',
 
             company: {
                 title: 'Компанија',
