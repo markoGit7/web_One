@@ -1,26 +1,27 @@
 // client/vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// These two lines simulate __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default defineConfig(({ mode }) => ({
   root: './client',
   plugins: [react()],
-
-  // Conditional base depending on environment mode
   base: mode === 'production' ? '/web_One/' : '/',
-
   build: {
-    outDir: './dist', // output dist folder relative to root
-    
+    outDir: './dist',
     rollupOptions: {
       input: {
-        main: 'index.html',
+        main: path.resolve(__dirname, 'client', 'index.html')  // ✅ use full path
       }
     }
   },
-
   server: {
     port: 5173,
-    host: true, // exposes to local network
+    host: true,
   },
 }));
