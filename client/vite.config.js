@@ -11,6 +11,12 @@ export default defineConfig(({ mode }) => ({
 
   build: {
     outDir: './dist', // output dist folder relative to root
+    
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+      }
+    }
   },
 
   server: {
