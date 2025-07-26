@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => ({
     outDir: './dist',
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'client', 'index.html')  // ✅ use full path
+        main: path.resolve(__dirname, 'index.html')  // ✅ use full path
       }
     }
   },
