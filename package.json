@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/markoGit7/web_One/issues"
   },
-  "homepage": "https://markoGit7.github.io/web_One/",
+  "homepage": "https://markoGit7.github.io/web_One",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "concurrently": "^9.1.2",
