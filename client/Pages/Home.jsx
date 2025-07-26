@@ -155,7 +155,7 @@ function Home( { onOpenContactModal } ) {
                                             <div className="relative pl-16 inline-block text-start break-all">
                                                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 flex items-center justify-center">
                                                     <picture>
-                                                        <source srcSet="/two_human_icon.webp" type="image/webp" />
+                                                        <source srcSet={`${import.meta.env.BASE_URL}two_human_icon.webp`} type="image/webp" />
                                                         <img src={`${import.meta.env.BASE_URL}two_human_icon.png`} alt="humans-icon" width="48" height="32" className="max-w-[47px] max-h-9 w-auto h-auto" /> 
                                                     </picture>
                                                 </div>
@@ -169,7 +169,7 @@ function Home( { onOpenContactModal } ) {
                                             <div className="relative pl-16 inline-block text-start break-all">
                                                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-12 h-12 flex items-center justify-center">
                                                 <picture>
-                                                        <source srcSet="/blue-hands.webp" type="image/webp" />
+                                                        <source srcSet={`${import.meta.env.BASE_URL}blue-hands.webp`} type="image/webp" />
                                                         <img src={`${import.meta.env.BASE_URL}blue-hands.png`} alt="blue-hands-icon" width="34" height="30" className="max-w-[47px] max-h-9 w-auto h-auto" />
                                                 </picture>
                                                 </div>

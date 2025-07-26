@@ -45,7 +45,7 @@ function Form({onClose}) {
         }, 0);
 
         setShowMessage(true);
-        setMessageBox({text:'Message sent successfully!', image:'/check.webp', from:'Contact Us'})
+        setMessageBox({text:'Message sent successfully!', image:'check.webp', from:'Contact Us'})
 
         setTimeout(() => {
             setShowMessage(false);

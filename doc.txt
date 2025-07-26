@@ -4,3 +4,11 @@ Only thing you'll need it to:
 
 
 Im using Email.js ---> for receving emails sent by users
+
+Future Updates can include {
+    2x2-Block: {count up of the stats}
+    Footer Input: {actual DB connection that will track if you've entered your email, no matter the device}
+    Sections: {
+        animations
+    }
+}
