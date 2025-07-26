@@ -75,7 +75,7 @@ function LanguageDropdown() {
 
     const switchLanguage = (newLang) => {
         switchLang(newLang);
-        const newPath = location.pathname.replace(`/${lang}`, `/${newLang}`);
+        const newPath = location.pathname.replace(`${import.meta.env.BASE_URL}${lang}`, `${import.meta.env.BASE_URL}${newLang}`);
         navigate(newPath);
 
         close();

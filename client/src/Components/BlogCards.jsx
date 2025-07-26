@@ -9,144 +9,144 @@ function BlogCards() {
     
     const cards = [
         {
-            'image': ['/blog-img-1.jpg', '/blog-img-1.webp'],
-            'badge': t.blogs_section.blog1.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-1.jpg`, `${import.meta.env.BASE_URL}blog-img-1.webp`],
+            'badge': t?.blogs_section?.blog1?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog1.publishDate,
-            'title': t.blogs_section.blog1.title,
-            'txt': t.blogs_section.blog1.text,
+            'publishD': t?.blogs_section?.blog1?.publishDate,
+            'title': t?.blogs_section?.blog1?.title,
+            'txt': t?.blogs_section?.blog1?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-2.jpg', '/blog-img-2.webp'],
-            'badge': t.blogs_section.blog2.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-2.jpg`, `${import.meta.env.BASE_URL}blog-img-2.webp`],
+            'badge': t?.blogs_section?.blog2.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog2.publishDate,
-            'title': t.blogs_section.blog2.title,
-            'txt': t.blogs_section.blog2.text,
+            'publishD': t?.blogs_section?.blog2?.publishDate,
+            'title': t?.blogs_section?.blog2?.title,
+            'txt': t?.blogs_section?.blog2?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-3.jpg', '/blog-img-3.webp'],
-            'badge': t.blogs_section.blog3.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-3.jpg`, `${import.meta.env.BASE_URL}blog-img-3.webp`],
+            'badge': t?.blogs_section?.blog3.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog3.publishDate,
-            'title': t.blogs_section.blog3.title,
-            'txt': t.blogs_section.blog3.text,
+            'publishD': t?.blogs_section?.blog3?.publishDate,
+            'title': t?.blogs_section?.blog3?.title,
+            'txt': t?.blogs_section?.blog3?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-4.jpg', '/blog-img-4.webp'],
-            'badge': t.blogs_section.blog4.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-4.jpg`, `${import.meta.env.BASE_URL}blog-img-4.webp`],
+            'badge': t?.blogs_section?.blog4?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog4.publishDate,
-            'title': t.blogs_section.blog4.title,
-            'txt': t.blogs_section.blog4.text,
+            'publishD': t?.blogs_section?.blog4?.publishDate,
+            'title': t?.blogs_section?.blog4?.title,
+            'txt': t?.blogs_section?.blog4?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-5.jpg', '/blog-img-5.webp'],
-            'badge': t.blogs_section.blog5.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-5.jpg`, `${import.meta.env.BASE_URL}blog-img-5.webp`],
+            'badge': t?.blogs_section?.blog5.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog5.publishDate,
-            'title': t.blogs_section.blog5.title,
-            'txt': t.blogs_section.blog5.text,
+            'publishD': t?.blogs_section?.blog5?.publishDate,
+            'title': t?.blogs_section?.blog5?.title,
+            'txt': t?.blogs_section?.blog5?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-6.jpg', '/blog-img-6.webp'],
-            'badge': t.blogs_section.blog6.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-6.jpg`, `${import.meta.env.BASE_URL}blog-img-6.webp`],
+            'badge': t?.blogs_section?.blog6?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog6.publishDate,
-            'title': t.blogs_section.blog6.title,
-            'txt': t.blogs_section.blog6.text,
+            'publishD': t?.blogs_section?.blog6?.publishDate,
+            'title': t?.blogs_section?.blog6?.title,
+            'txt': t?.blogs_section?.blog6?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-7.jpg', '/blog-img-7.webp'],
-            'badge': t.blogs_section.blog7.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-7.jpg`, `${import.meta.env.BASE_URL}blog-img-7.webp`],
+            'badge': t?.blogs_section?.blog7?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog7.publishDate,
-            'title': t.blogs_section.blog7.title,
-            'txt': t.blogs_section.blog7.text,
+            'publishD': t?.blogs_section?.blog7?.publishDate,
+            'title': t?.blogs_section?.blog7?.title,
+            'txt': t?.blogs_section?.blog7?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-8.jpg', '/blog-img-8.webp'],
-            'badge': t.blogs_section.blog8.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-8.jpg`, `${import.meta.env.BASE_URL}blog-img-8.webp`],
+            'badge': t?.blogs_section?.blog8?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog8.publishDate,
-            'title': t.blogs_section.blog8.title,
-            'txt': t.blogs_section.blog8.text,
+            'publishD': t?.blogs_section?.blog8?.publishDate,
+            'title': t?.blogs_section?.blog8?.title,
+            'txt': t?.blogs_section?.blog8?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-9.jpg', '/blog-img-9.webp'],
-            'badge': t.blogs_section.blog9.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-9.jpg`, `${import.meta.env.BASE_URL}blog-img-9.webp`],
+            'badge': t?.blogs_section?.blog9.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog9.publishDate,
-            'title': t.blogs_section.blog9.title,
-            'txt': t.blogs_section.blog9.text,
+            'publishD': t?.blogs_section?.blog9?.publishDate,
+            'title': t?.blogs_section?.blog9?.title,
+            'txt': t?.blogs_section?.blog9?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-10.jpg', '/blog-img-10.webp'],
-            'badge': t.blogs_section.blog10.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-10.jpg`, `${import.meta.env.BASE_URL}blog-img-10.webp`],
+            'badge': t?.blogs_section?.blog10?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog10.publishDate,
-            'title': t.blogs_section.blog10.title,
-            'txt': t.blogs_section.blog10.text,
+            'publishD': t?.blogs_section?.blog10?.publishDate,
+            'title': t?.blogs_section?.blog10?.title,
+            'txt': t?.blogs_section?.blog10?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-11.jpg', '/blog-img-11.webp'],
-            'badge': t.blogs_section.blog11.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-11.jpg`, `${import.meta.env.BASE_URL}blog-img-11.webp`],
+            'badge': t?.blogs_section?.blog11?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog11.publishDate,
-            'title': t.blogs_section.blog11.title,
-            'txt': t.blogs_section.blog11.text,
+            'publishD': t?.blogs_section?.blog11?.publishDate,
+            'title': t?.blogs_section?.blog11?.title,
+            'txt': t?.blogs_section?.blog11?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
         },
 
         {
-            'image': ['/blog-img-12.jpg', '/blog-img-12.webp'],
-            'badge': t.blogs_section.blog12.badge,
+            'image': [`${import.meta.env.BASE_URL}blog-img-12.jpg`, `${import.meta.env.BASE_URL}blog-img-12.webp`],
+            'badge': t?.blogs_section?.blog12?.badge,
             'link': 'article.html',
-            'publishD': t.blogs_section.blog12.publishDate,
-            'title': t.blogs_section.blog12.title,
-            'txt': t.blogs_section.blog12.text,
+            'publishD': t?.blogs_section?.blog12?.publishDate,
+            'title': t?.blogs_section?.blog12?.title,
+            'txt': t?.blogs_section?.blog12?.text,
 
             'Bshare':'/',
             'BreadMore':'/'
