@@ -72,11 +72,11 @@ function LanguageDropdown() {
         };
     }, [open]); // Dependency array: re-run effect if 'open' state changes
 
-
+    
     const switchLanguage = (newLang) => {
         const currentLang = location.pathname.split('/')[1];
         
-        const newPath = location.pathname.replace(`${currentLang}`, `${newLang}`);
+        const newPath = location.pathname.replace(`/${currentLang}`, `/${newLang}`);
         
         switchLang(newLang);
         navigate(newPath);
