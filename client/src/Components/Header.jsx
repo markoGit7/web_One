@@ -29,7 +29,7 @@ function Header() {
                     {/* Logo */}
                     <div className="image shrink-0 pl-5 sm:pl-0">
                         <Link to={`/${lang}`}>
-                            <img src="/logo.svg" alt="logo" width="155" height="24" className="h-auto w-[40vw] max-w-full min-[330px]:w-[140px] md:w-[155px]"/>
+                            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="logo" width="155" height="24" className="h-auto w-[40vw] max-w-full min-[330px]:w-[140px] md:w-[155px]"/>
                         </Link>
                     </div>
 
