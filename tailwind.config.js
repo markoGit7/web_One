@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './index.html',
+        // Existing path you want to keep:
+        './src/**/*.{html,js,jsx,ts,tsx,vue}',
+
+        // New paths you provided:
+        './index.html', // If your main HTML file is at the root
         './client/src/**/*.{js,jsx,ts,tsx}',
-        "./client/Pages/**/*.{js,ts,jsx,tsx}",
+        './client/Pages/**/*.{js,ts,jsx,tsx}',
+
+        // Add any other paths where you might use Tailwind classes,
+        // for example, if you have components in a 'components' folder
+        // './client/components/**/*.{js,jsx,ts,tsx}',
     ],
     theme: {
         extend: {
