@@ -49,7 +49,7 @@ function Footer( { setOpen }) {
         if(!isNewUser(inputTxt)) {
             setShowMessage(true);
 
-            setMessageBox({'from':'Footer', 'text': `${inputTxt} Already exists`, 'image':'/xmark.png'});
+            setMessageBox({'from':'Footer', 'text': `${inputTxt} Already exists`, 'image':'xmark.png'});
 
             setTimeout(() => {
                 setShowMessage(false);
@@ -71,7 +71,7 @@ function Footer( { setOpen }) {
                 
                 addToData();
                 setInputTxt('');
-                setMessageBox({'from':'Footer', 'text': `Thank's For Joining Us`, 'image':'/check.webp'});
+                setMessageBox({'from':'Footer', 'text': `Thank's For Joining Us`, 'image':'check.webp'});
                 setShowMessage(true);
 
                 setTimeout(() => {

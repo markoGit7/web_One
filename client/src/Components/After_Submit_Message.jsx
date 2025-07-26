@@ -11,7 +11,7 @@ function After_Submit_Message({ image, txt, comingFrom, isVisible }) {
             <span className='absolute w-full h-full bg-[rgba(255,255,255,.9)] blur-sm top-0 left-0 rounded-full'></span>
 
             <div className='relative z-10 bg-transparent flex'>
-                <img src={image} alt="" width={1280} height={1280} className='w-6 h-6 rounded-full self-center' />
+                <img src={`${import.meta.env.BASE_URL}${image}`} alt="" width={1280} height={1280} className='w-6 h-6 rounded-full self-center' />
 
                 <div className='ml-3'>
                     <p className='text-sm mb-2'>{txt}</p>

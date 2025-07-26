@@ -25,7 +25,7 @@ function Form({onClose}) {
                 // ✅ Show the message only after success
                 setMessageBox({
                     text: 'Message sent successfully!',
-                    image: '/check.webp',
+                    image: 'check.webp',
                     from: 'Contact Us'
                 });
 
