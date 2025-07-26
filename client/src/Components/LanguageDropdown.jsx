@@ -75,11 +75,12 @@ function LanguageDropdown() {
 
     const switchLanguage = (newLang) => {
         const currentLang = location.pathname.split('/')[1];
+        
         const newPath = location.pathname.replace(`${currentLang}`, `${newLang}`);
         
         switchLang(newLang);
         navigate(newPath);
-
+        
         close();
         
         window.location.reload();

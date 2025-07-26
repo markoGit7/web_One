@@ -7,6 +7,7 @@ function Home( { onOpenContactModal } ) {
     const { lang } = useParams();
     const t = texts[lang];
     
+
     return (
         <>
             <Header />

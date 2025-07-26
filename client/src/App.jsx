@@ -35,7 +35,7 @@ function App() {
         <>
             <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Routes>
-                    <Route path='/' element={<Navigate to="/en" replace />} />
+                    <Route index element={<Navigate to="/en" replace />} />
                     <Route path='/:lang' element={<Home onOpenContactModal={handleOpenFormModal}/>} />
                     <Route path="/:lang/blogs" element={<Blogs onOpenContactModal={handleOpenFormModal}/>} />
                     <Route path="/:lang/blogs/single" element={<SingleBlog onOpenContactModal={handleOpenFormModal}/>} />
