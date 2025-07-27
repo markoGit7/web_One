@@ -84,14 +84,22 @@ function Tabs() {
     const [currentImg, setCurrentImg] = useState(null);
 
     const handleImagesJson = (tab) => {
-        
         if(currentI === tab.tabName) {
-            
             setImagesJSON(tab.images);
-            
-            
         }
     };
+
+    useEffect(() => {
+      
+        if(isZoomed) {
+            document.body.style.overflow = 'hidden';
+            return;   
+        }
+
+        document.body.style.overflow = 'auto';
+
+    }, [isZoomed])
+    
     
     
     

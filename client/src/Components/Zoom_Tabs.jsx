@@ -2,7 +2,7 @@ import {React, useState, useEffect} from 'react';
 import Tabs_Slider from './Tabs_Slider.jsx';
 function Zoom_Tabs({image, currentImage, onClose}) {
     const [indx, setIndx] = useState(currentImage)
-
+    
     const nextImg = () => {
         if(indx >= image.length - 1) return;
         setIndx(indx + 1);
