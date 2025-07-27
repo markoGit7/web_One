@@ -1,6 +1,7 @@
 import {React, useState, useEffect} from 'react'
 import {texts} from '../i18n/texts';
 import { useParams} from 'react-router-dom';
+import {Zoom_Tabs} from '../Components';
 
 function Tabs() {
     const { lang } = useParams();
@@ -77,13 +78,27 @@ function Tabs() {
         }
     ]
 
-    
+    const [isZoomed, setZoomed] = useState(false);
     const [currentI, setCurrentI] = useState(t?.tabs_section?.btns[0].toLowerCase());
+    const [imagesJSON, setImagesJSON] = useState([]);
+    const [currentImg, setCurrentImg] = useState(null);
+
+    const handleImagesJson = (tab) => {
+        
+        if(currentI === tab.tabName) {
+            
+            setImagesJSON(tab.images);
+            
+            
+        }
+    };
     
-    console.log(currentI);
+    
+    
     
     return (
-        <section className="py-[62px] relative w-full pt-[45px] sm:pt-[62px]">
+        <>
+            <section className="py-[62px] relative w-full pt-[45px] sm:pt-[62px]">
                 <div className="mx-auto max-w-[1194px] px-5">
                     <div className="mb-8 text-center w-full">
                         <h2 className="text-[27px] font-semibold  text-colorgray900 min-[450px]:text-3xl md:text-[40px]">
@@ -98,7 +113,7 @@ function Tabs() {
                             {
                                 t?.tabs_section?.btns.map((btn, indx) => (
                                     <li key={indx} className="px-[15px]  sm:px-[22px] md:px-[29.5]">
-                                        <button className={`font-normal text-sm md:text-base transition-colors duration-200 ease-in-out outline-none ring-0 ${currentI === btn.toLowerCase() ? 'text-colorblue' : 'text-gray-900'}`} onClick={() => setCurrentI(btn.toLowerCase())}>
+                                        <button className={`font-normal text-sm md:text-base transition-colors duration-200 ease-in-out outline-none ring-0 ${currentI === btn.toLowerCase() ? 'text-colorblue' : 'text-gray-900'}`} onClick={() => {setCurrentI(btn.toLowerCase())}}>
                                             {btn}
                                         </button>
                                     </li>
@@ -115,7 +130,7 @@ function Tabs() {
 
                         {
                             tabs.map((tab, indx) => (
-                                <div key={indx} className={`w-full relative transition-all duration-300 ease-in-out ${currentI === tab.tabName?.toLowerCase() ? 'translate-y-0 opacity-100 ' : 'translate-y-12 opacity-0 max-h-0 overflow-hidden'}`}>
+                                <div key={indx} className={`w-full relative transition-all duration-300 ease-in-out ${currentI === tab.tabName?.toLowerCase() ? 'translate-y-0 opacity-100 ' : 'translate-y-12 opacity-0 max-h-0 overflow-hidden'}`} onClick={() => handleImagesJson(tab)}>
                                     <div className="flex flex-row flex-wrap -mx-[15px] gap-y-[20px]">
                                         
                                         {
@@ -124,13 +139,13 @@ function Tabs() {
                                                     <div className="w-full relative h-[316px] rounded-[9.86px]">
                                                         <picture>
                                                             <source srcSet={img[1]} type="image/webp" />
-                                                            <img src={img[0]} alt={`tabs-img-${i + 1}`} width="534" height="633" className="w-full h-full object-cover object-center rounded-[9.86px]" />
+                                                            <img src={img[0]} alt={`tabs-img-${i + 1}`} onClick={() => {setCurrentImg(i); setZoomed(true)}} width="534" height="633" className="w-full h-full object-cover object-center rounded-[9.86px]" />
                                                         </picture>
                                                     </div>
                                                 </div>
                                             ))
                                         }
-                                      
+                                    
                                     </div>
                                 </div>
                             ))
@@ -138,6 +153,14 @@ function Tabs() {
                     </div>
                 </div>
             </section>
+
+            {
+                isZoomed && (
+                    <Zoom_Tabs image={imagesJSON} currentImage={currentImg} onClose={() => {setZoomed(false);}}/>
+                )
+            }
+        </>
+            
     )
 }
 

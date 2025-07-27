@@ -1,7 +1,7 @@
 import {React, useState, useEffect} from 'react'
-import {Header, Slider, ContactUS_Button, RegisterButton, InfinitSpinIcons, Tabs, Accordion, Footer, After_Submit_Message} from '../src/Components';
+import {Header, Slider, ContactUS_Button, RegisterButton, InfinitSpinIcons, Tabs, Accordion, Footer, Zoom_Tabs} from '../src/Components';
 import {texts} from '../src/i18n/texts';
-import { useParams} from 'react-router-dom';
+import { useParams, Link} from 'react-router-dom';
 
 function Home( { onOpenContactModal } ) {
     const { lang } = useParams();
@@ -331,9 +331,9 @@ function Home( { onOpenContactModal } ) {
                                         <h3 className="break-words font-semibold text-[20px] leading-[140%] text-gray-600">{t?.cards_section.card1.text}</h3>
                                         <div className="absolute bottom-4 w-full text-center left-0 rounded-b-lg">
                                             <div className="text-colorblue relative font-semibold text-[20px] inline-block  leading-[140%]">
-                                                <a href="article.html" className="pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:bg-right-arrow before:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
+                                                <Link to="/" className="before:transition-all before:duration-300 before:ease-in-out before:hover:translate-x-3 md:pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:md:bg-right-arrow before:md:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
                                                     {t?.cards_section.card1.button}
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -356,9 +356,9 @@ function Home( { onOpenContactModal } ) {
                                         <h3 className="break-words font-semibold text-[20px] leading-[140%] text-colorgray600">{t?.cards_section.card2.text}</h3>
                                         <div className="absolute bottom-4 w-full text-center left-0 rounded-b-lg">
                                             <div className="text-colorblue relative font-semibold text-[20px] inline-block  leading-[140%]">
-                                                <a href="article.html" className="pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:bg-right-arrow before:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
+                                                <Link to="/" className="before:transition-all before:duration-300 before:ease-in-out before:hover:translate-x-3 md:pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:md:bg-right-arrow before:md:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
                                                     {t?.cards_section.card2.button}
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -381,9 +381,9 @@ function Home( { onOpenContactModal } ) {
                                         <h3 className="break-words font-semibold text-[20px] leading-[140%] text-colorgray600">{t?.cards_section.card3.text}</h3>
                                         <div className="absolute bottom-4 w-full text-center left-0 rounded-b-lg">
                                             <div className="text-colorblue relative font-semibold text-[20px] inline-block  leading-[140%]">
-                                                <a href="article.html" className="pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:bg-right-arrow before:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
+                                                <Link to="/" className="before:transition-all before:duration-300 before:ease-in-out before:hover:translate-x-3 md:pr-8 relative before:absolute before:right-1 before:top-1/2 before:-translate-y-1/2 before:md:bg-right-arrow before:md:content-[''] before:w-[15px] before:h-2 before:inline-block before:bg-no-repeat before:bg-center before:bg-cover hover:text-blue-700 transition-all duration-300 ease-in-out">
                                                     {t?.cards_section.card3.button}
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

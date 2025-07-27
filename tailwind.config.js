@@ -18,7 +18,8 @@ export default {
 
             backgroundImage: {
                 'bg-down-arrow': "url('/down-arrow.svg')",
-                'share': "url('/share.svg')"
+                'share': "url('/share.svg')",
+                'right-arrow': "url('/right-arrow.svg')"
             },
 
             fontFamily: {

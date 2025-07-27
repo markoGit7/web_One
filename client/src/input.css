@@ -18,3 +18,13 @@ body, html {
     max-height:2000px !important;
     transition: max-height 0.5s ease-in-out;
 }
+
+.tabs_slider .slick-slider,
+.tabs_slider .slick-slider .slick-list,
+.tabs_slider .slick-slider .slick-list .slick-track,
+.tabs_slider .slick-slider .slick-list .slick-track .slick-slide > div
+{
+    height: 100%;
+}
+
+
