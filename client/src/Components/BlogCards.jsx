@@ -1,9 +1,10 @@
 import React from 'react'
 import {texts} from '../i18n/texts';
-import { useParams} from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
 
 function BlogCards() {
 
+    const nav = useNavigate();
     const { lang } = useParams();
     const t = texts[lang];
     
@@ -11,7 +12,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-1.jpg`, `${import.meta.env.BASE_URL}blog-img-1.webp`],
             'badge': t?.blogs_section?.blog1?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog1?.publishDate,
             'title': t?.blogs_section?.blog1?.title,
             'txt': t?.blogs_section?.blog1?.text,
@@ -23,7 +24,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-2.jpg`, `${import.meta.env.BASE_URL}blog-img-2.webp`],
             'badge': t?.blogs_section?.blog2.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog2?.publishDate,
             'title': t?.blogs_section?.blog2?.title,
             'txt': t?.blogs_section?.blog2?.text,
@@ -35,7 +36,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-3.jpg`, `${import.meta.env.BASE_URL}blog-img-3.webp`],
             'badge': t?.blogs_section?.blog3.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog3?.publishDate,
             'title': t?.blogs_section?.blog3?.title,
             'txt': t?.blogs_section?.blog3?.text,
@@ -47,7 +48,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-4.jpg`, `${import.meta.env.BASE_URL}blog-img-4.webp`],
             'badge': t?.blogs_section?.blog4?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog4?.publishDate,
             'title': t?.blogs_section?.blog4?.title,
             'txt': t?.blogs_section?.blog4?.text,
@@ -59,7 +60,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-5.jpg`, `${import.meta.env.BASE_URL}blog-img-5.webp`],
             'badge': t?.blogs_section?.blog5.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog5?.publishDate,
             'title': t?.blogs_section?.blog5?.title,
             'txt': t?.blogs_section?.blog5?.text,
@@ -71,7 +72,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-6.jpg`, `${import.meta.env.BASE_URL}blog-img-6.webp`],
             'badge': t?.blogs_section?.blog6?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog6?.publishDate,
             'title': t?.blogs_section?.blog6?.title,
             'txt': t?.blogs_section?.blog6?.text,
@@ -83,7 +84,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-7.jpg`, `${import.meta.env.BASE_URL}blog-img-7.webp`],
             'badge': t?.blogs_section?.blog7?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog7?.publishDate,
             'title': t?.blogs_section?.blog7?.title,
             'txt': t?.blogs_section?.blog7?.text,
@@ -95,7 +96,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-8.jpg`, `${import.meta.env.BASE_URL}blog-img-8.webp`],
             'badge': t?.blogs_section?.blog8?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog8?.publishDate,
             'title': t?.blogs_section?.blog8?.title,
             'txt': t?.blogs_section?.blog8?.text,
@@ -107,7 +108,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-9.jpg`, `${import.meta.env.BASE_URL}blog-img-9.webp`],
             'badge': t?.blogs_section?.blog9.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog9?.publishDate,
             'title': t?.blogs_section?.blog9?.title,
             'txt': t?.blogs_section?.blog9?.text,
@@ -119,7 +120,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-10.jpg`, `${import.meta.env.BASE_URL}blog-img-10.webp`],
             'badge': t?.blogs_section?.blog10?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog10?.publishDate,
             'title': t?.blogs_section?.blog10?.title,
             'txt': t?.blogs_section?.blog10?.text,
@@ -131,7 +132,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-11.jpg`, `${import.meta.env.BASE_URL}blog-img-11.webp`],
             'badge': t?.blogs_section?.blog11?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog11?.publishDate,
             'title': t?.blogs_section?.blog11?.title,
             'txt': t?.blogs_section?.blog11?.text,
@@ -143,7 +144,7 @@ function BlogCards() {
         {
             'image': [`${import.meta.env.BASE_URL}blog-img-12.jpg`, `${import.meta.env.BASE_URL}blog-img-12.webp`],
             'badge': t?.blogs_section?.blog12?.badge,
-            'link': 'article.html',
+            'link': `/${lang}/blogs/single`,
             'publishD': t?.blogs_section?.blog12?.publishDate,
             'title': t?.blogs_section?.blog12?.title,
             'txt': t?.blogs_section?.blog12?.text,
@@ -153,7 +154,9 @@ function BlogCards() {
         },
     ];
     
-    
+    const navigateToArticle = () => {
+        nav(`/${lang}/blogs/single`);
+    }
 
     return (
 
@@ -176,14 +179,14 @@ function BlogCards() {
                                     {card.badge}
                                 </div>
 
-                                <a href={card.link} className="absolute bottom-0 left-0 right-0 top-0 h-full w-full rounded-t-[10px]"><span className="hidden">Click link</span></a>
+                                <a onClick={navigateToArticle} className="absolute bottom-0 left-0 right-0 top-0 h-full w-full rounded-t-[10px]"><span className="hidden">Click link</span></a>
                             </div>
 
                             {/* Content */}
                             <div className="p-[12.41px_17.71px_47.1px]">
                                 <span className="text-base !leading-[150%] text-colorgray600">{card.publishD}</span>
                                 <h2>
-                                    <a href="article.html" className="mb-[9.38px] block text-lg font-semibold text-colorgray700 min-[350px]:text-2xl">
+                                    <a onClick={navigateToArticle} className="mb-[9.38px] block text-lg font-semibold text-colorgray700 min-[350px]:text-2xl cursor-pointer">
                                         {card.title}
                                     </a>
                                 </h2>
@@ -197,7 +200,7 @@ function BlogCards() {
                                     </div>
 
                                     <div>
-                                        <a href="article.html" className="block text-base font-normal text-colorgray900 underline underline-offset-4 transition-all duration-300 ease-in-out hover:text-colorblue">Read more</a>
+                                        <a onClick={navigateToArticle} className="block text-base font-normal text-colorgray900 underline underline-offset-4 transition-all duration-300 ease-in-out hover:text-colorblue">Read more</a>
                                     </div>
                                 </div>
                             </div>
