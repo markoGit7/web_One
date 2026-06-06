@@ -57,7 +57,6 @@ function Footer( { setOpen }) {
             setInputTxt('');
             return;
         }
-                   
 
         setTimeout(() => {
 
